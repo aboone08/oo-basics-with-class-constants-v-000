@@ -1,6 +1,6 @@
 class Shoe
-  attr_accessor :color, :size, :material, :condition
-  attr_reader :brand
+  attr_accessor :color, :material, :condition
+  attr_reader :brand, :size
 
   BRANDS = []
 
@@ -12,6 +12,10 @@ class Shoe
     self.condition = "new"
     puts "Your shoe is as good as new!"
   end
+
+  def size=(size)
+    @size = size
+  end 
 
   def brand=(brand)
     @brand = brand
